@@ -24,6 +24,7 @@ namespace AppProductAccounting
             if (name != null && article.ToString().Length > 0 && article.ToString().Length < 10)
             {
                 _products.Add(new Product(name, article));
+                _countByArticleDictionary.Add(article, 0);
                 return true;
             }
 
